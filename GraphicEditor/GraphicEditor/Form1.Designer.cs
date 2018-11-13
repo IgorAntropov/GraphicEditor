@@ -75,18 +75,18 @@
             this.DotX = new System.Windows.Forms.TextBox();
             this.DotY = new System.Windows.Forms.TextBox();
             this.Canvas = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuProject = new System.Windows.Forms.ToolStripMenuItem();
-            this.openProject = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveProject = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsProject = new System.Windows.Forms.ToolStripMenuItem();
-            this.jpgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bmpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.MenuProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.OpenProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveAsProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.JpgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BmpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RightSidebar.SuspendLayout();
             this.TopMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // RightSidebar
@@ -504,66 +504,66 @@
             this.Canvas.TabIndex = 4;
             this.Canvas.TabStop = false;
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuProject});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1158, 28);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuProject});
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(1158, 28);
+            this.MenuStrip.TabIndex = 5;
+            this.MenuStrip.Text = "menuStrip1";
             // 
-            // menuProject
+            // MenuProject
             // 
-            this.menuProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openProject,
-            this.saveProject,
-            this.saveAsProject});
-            this.menuProject.Name = "menuProject";
-            this.menuProject.Size = new System.Drawing.Size(71, 24);
-            this.menuProject.Text = "Проект";
+            this.MenuProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OpenProject,
+            this.SaveProject,
+            this.SaveAsProject});
+            this.MenuProject.Name = "MenuProject";
+            this.MenuProject.Size = new System.Drawing.Size(71, 24);
+            this.MenuProject.Text = "Проект";
             // 
-            // openProject
+            // OpenProject
             // 
-            this.openProject.Name = "openProject";
-            this.openProject.Size = new System.Drawing.Size(216, 26);
-            this.openProject.Text = "Открыть проект";
+            this.OpenProject.Name = "OpenProject";
+            this.OpenProject.Size = new System.Drawing.Size(216, 26);
+            this.OpenProject.Text = "Открыть проект";
             // 
-            // saveProject
+            // SaveProject
             // 
-            this.saveProject.Name = "saveProject";
-            this.saveProject.Size = new System.Drawing.Size(216, 26);
-            this.saveProject.Text = "Сохранить проект";
+            this.SaveProject.Name = "SaveProject";
+            this.SaveProject.Size = new System.Drawing.Size(216, 26);
+            this.SaveProject.Text = "Сохранить проект";
             // 
-            // saveAsProject
+            // SaveAsProject
             // 
-            this.saveAsProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jpgToolStripMenuItem,
-            this.pngToolStripMenuItem,
-            this.bmpToolStripMenuItem});
-            this.saveAsProject.Name = "saveAsProject";
-            this.saveAsProject.Size = new System.Drawing.Size(216, 26);
-            this.saveAsProject.Text = "Сохранить как";
+            this.SaveAsProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.JpgToolStripMenuItem,
+            this.PngToolStripMenuItem,
+            this.BmpToolStripMenuItem});
+            this.SaveAsProject.Name = "SaveAsProject";
+            this.SaveAsProject.Size = new System.Drawing.Size(216, 26);
+            this.SaveAsProject.Text = "Сохранить как";
             // 
-            // jpgToolStripMenuItem
+            // JpgToolStripMenuItem
             // 
-            this.jpgToolStripMenuItem.Name = "jpgToolStripMenuItem";
-            this.jpgToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.jpgToolStripMenuItem.Text = "Jpg";
+            this.JpgToolStripMenuItem.Name = "JpgToolStripMenuItem";
+            this.JpgToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.JpgToolStripMenuItem.Text = "Jpg";
             // 
-            // pngToolStripMenuItem
+            // PngToolStripMenuItem
             // 
-            this.pngToolStripMenuItem.Name = "pngToolStripMenuItem";
-            this.pngToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.pngToolStripMenuItem.Text = "Png";
+            this.PngToolStripMenuItem.Name = "PngToolStripMenuItem";
+            this.PngToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.PngToolStripMenuItem.Text = "Png";
             // 
-            // bmpToolStripMenuItem
+            // BmpToolStripMenuItem
             // 
-            this.bmpToolStripMenuItem.Name = "bmpToolStripMenuItem";
-            this.bmpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.bmpToolStripMenuItem.Text = "Bmp";
+            this.BmpToolStripMenuItem.Name = "BmpToolStripMenuItem";
+            this.BmpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.BmpToolStripMenuItem.Text = "Bmp";
             // 
             // MainForm
             // 
@@ -575,9 +575,9 @@
             this.Controls.Add(this.DotX);
             this.Controls.Add(this.TopMenu);
             this.Controls.Add(this.RightSidebar);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "MainForm";
             this.Text = "GraphicEditor";
             this.RightSidebar.ResumeLayout(false);
@@ -585,8 +585,8 @@
             this.TopMenu.ResumeLayout(false);
             this.TopMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -640,14 +640,14 @@
         private System.Windows.Forms.TextBox DotX;
         private System.Windows.Forms.TextBox DotY;
         private System.Windows.Forms.PictureBox Canvas;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menuProject;
-        private System.Windows.Forms.ToolStripMenuItem openProject;
-        private System.Windows.Forms.ToolStripMenuItem saveProject;
-        private System.Windows.Forms.ToolStripMenuItem saveAsProject;
-        private System.Windows.Forms.ToolStripMenuItem jpgToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bmpToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem MenuProject;
+        private System.Windows.Forms.ToolStripMenuItem OpenProject;
+        private System.Windows.Forms.ToolStripMenuItem SaveProject;
+        private System.Windows.Forms.ToolStripMenuItem SaveAsProject;
+        private System.Windows.Forms.ToolStripMenuItem JpgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem BmpToolStripMenuItem;
     }
 }
 
