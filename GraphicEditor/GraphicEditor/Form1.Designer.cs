@@ -75,9 +75,18 @@
             this.DotX = new System.Windows.Forms.TextBox();
             this.DotY = new System.Windows.Forms.TextBox();
             this.Canvas = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.openProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsProject = new System.Windows.Forms.ToolStripMenuItem();
+            this.jpgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bmpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RightSidebar.SuspendLayout();
             this.TopMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RightSidebar
@@ -106,9 +115,9 @@
             this.FillGreenBtn,
             this.FillMoreColorBtn});
             this.RightSidebar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.RightSidebar.Location = new System.Drawing.Point(1089, 0);
+            this.RightSidebar.Location = new System.Drawing.Point(1089, 28);
             this.RightSidebar.Name = "RightSidebar";
-            this.RightSidebar.Size = new System.Drawing.Size(69, 660);
+            this.RightSidebar.Size = new System.Drawing.Size(69, 632);
             this.RightSidebar.TabIndex = 0;
             this.RightSidebar.Text = "rightSidebar";
             // 
@@ -294,7 +303,7 @@
             this.toolStripSeparator8,
             this.PrevArrowBtn,
             this.NextArrowBtn});
-            this.TopMenu.Location = new System.Drawing.Point(0, 0);
+            this.TopMenu.Location = new System.Drawing.Point(0, 28);
             this.TopMenu.Name = "TopMenu";
             this.TopMenu.Size = new System.Drawing.Size(1089, 28);
             this.TopMenu.TabIndex = 1;
@@ -489,11 +498,72 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Canvas.BackColor = System.Drawing.Color.White;
             this.Canvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Canvas.Location = new System.Drawing.Point(12, 41);
+            this.Canvas.Location = new System.Drawing.Point(12, 64);
             this.Canvas.Name = "Canvas";
-            this.Canvas.Size = new System.Drawing.Size(1065, 607);
+            this.Canvas.Size = new System.Drawing.Size(1065, 584);
             this.Canvas.TabIndex = 4;
             this.Canvas.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuProject});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1158, 28);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuProject
+            // 
+            this.menuProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openProject,
+            this.saveProject,
+            this.saveAsProject});
+            this.menuProject.Name = "menuProject";
+            this.menuProject.Size = new System.Drawing.Size(71, 24);
+            this.menuProject.Text = "Проект";
+            // 
+            // openProject
+            // 
+            this.openProject.Name = "openProject";
+            this.openProject.Size = new System.Drawing.Size(216, 26);
+            this.openProject.Text = "Открыть проект";
+            // 
+            // saveProject
+            // 
+            this.saveProject.Name = "saveProject";
+            this.saveProject.Size = new System.Drawing.Size(216, 26);
+            this.saveProject.Text = "Сохранить проект";
+            // 
+            // saveAsProject
+            // 
+            this.saveAsProject.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.jpgToolStripMenuItem,
+            this.pngToolStripMenuItem,
+            this.bmpToolStripMenuItem});
+            this.saveAsProject.Name = "saveAsProject";
+            this.saveAsProject.Size = new System.Drawing.Size(216, 26);
+            this.saveAsProject.Text = "Сохранить как";
+            // 
+            // jpgToolStripMenuItem
+            // 
+            this.jpgToolStripMenuItem.Name = "jpgToolStripMenuItem";
+            this.jpgToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.jpgToolStripMenuItem.Text = "Jpg";
+            // 
+            // pngToolStripMenuItem
+            // 
+            this.pngToolStripMenuItem.Name = "pngToolStripMenuItem";
+            this.pngToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.pngToolStripMenuItem.Text = "Png";
+            // 
+            // bmpToolStripMenuItem
+            // 
+            this.bmpToolStripMenuItem.Name = "bmpToolStripMenuItem";
+            this.bmpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.bmpToolStripMenuItem.Text = "Bmp";
             // 
             // MainForm
             // 
@@ -505,7 +575,9 @@
             this.Controls.Add(this.DotX);
             this.Controls.Add(this.TopMenu);
             this.Controls.Add(this.RightSidebar);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "GraphicEditor";
             this.RightSidebar.ResumeLayout(false);
@@ -513,6 +585,8 @@
             this.TopMenu.ResumeLayout(false);
             this.TopMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,6 +640,14 @@
         private System.Windows.Forms.TextBox DotX;
         private System.Windows.Forms.TextBox DotY;
         private System.Windows.Forms.PictureBox Canvas;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuProject;
+        private System.Windows.Forms.ToolStripMenuItem openProject;
+        private System.Windows.Forms.ToolStripMenuItem saveProject;
+        private System.Windows.Forms.ToolStripMenuItem saveAsProject;
+        private System.Windows.Forms.ToolStripMenuItem jpgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bmpToolStripMenuItem;
     }
 }
 
